@@ -9,14 +9,15 @@ using namespace cv;
 int main() {
 
 	CSortArray sortArray;
-	float a[] = { 1.1 ,3.2, 0.1, 9, 0.002, 3, 0.5, 8 };
-	for (int i = 0; i < 8;i++)
+	float a[] = { 1.1 ,3.2, 0.1, 9, 0.002, 3, 0.5, 8, 20, 0.005 };
+	int numele = 10;
+	for (int i = 0; i < numele;i++)
 	{
 		cout << a[i] << endl;
 	}
 	cout << "排序后的结果是: " << endl;
-	float *result = sortArray.shellSort(a, 8);
-	for (int i = 0; i < 8;i++)
+	float *result = sortArray.shellSort(a, numele);
+	for (int i = 0; i < numele;i++)
 	{
 		cout << result[i] << " ";
 	}
