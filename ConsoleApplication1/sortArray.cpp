@@ -112,10 +112,9 @@ float* CSortArray::shellSort(float* arr, const int arrLength)
 		std::cout << "gap is " << gap << std::endl;
 
 		for (int ind = 0; ind  < gap; ind++)
-		{
-			//根据gap确定每个sub-array中有多少个元素,并进行简单插入排序
-			//例如 arr总长为10; 第一分组时, gap为10/2=5 则分为5组;  每组为2个元素, 每组分别进行插入排序.
-			//第二次分组时, gap为 5/2 = 2  则分为2组, 每组为5个元素, 每组分别进行插入排序.
+		{//ind表示的是每个分组的编号
+	
+			//下面对每个分组进行简单插入排序
 			for (int i = 1; i<=arrLength/gap-1;i++)
 			{
 				preInd = i - 1;
