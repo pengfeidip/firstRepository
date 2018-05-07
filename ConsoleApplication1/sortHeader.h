@@ -30,6 +30,12 @@ public:
 	*/
 	float* insertionSort(float* arr, const int arrLength);
 
+	/*@Brief: insertionSort-------shell sort
+	
+	*/
+	float* shellSort(float* arr, const int arrLength);
+
+
 };
 
 

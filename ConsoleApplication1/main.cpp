@@ -9,18 +9,18 @@ using namespace cv;
 int main() {
 
 	CSortArray sortArray;
-	float a[] = { 1.1 ,3.2, 0.1, 9, 0.002, 3, 0.5 };
-	for (int i = 0; i < 7;i++)
+	float a[] = { 1.1 ,3.2, 0.1, 9, 0.002, 3, 0.5, 8 };
+	for (int i = 0; i < 8;i++)
 	{
 		cout << a[i] << endl;
 	}
 	cout << "排序后的结果是: " << endl;
-	float *result = sortArray.insertionSort(a, 7);
-	for (int i = 0; i < 7;i++)
+	float *result = sortArray.shellSort(a, 8);
+	for (int i = 0; i < 8;i++)
 	{
-		cout << result[i] << endl;
+		cout << result[i] << " ";
 	}
-	
+	cout << endl;
 #if 0
 	//确认数组的长度， 并初始化数组
 	int arrLength;

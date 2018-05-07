@@ -10,12 +10,15 @@ CSortArray::~CSortArray()
 
 }
 
+/*@Brief: 交换排序-----冒泡排序
+* 
+*/
 float * CSortArray::bubbleSort(float * arr, int arrLength)
 {
 	float temp;
 	for (int i = 0; i < arrLength; i++)
 	{
-		for (int j = 0; j<arrLength - i - 1; j++)
+		for (int j = 0; j < arrLength - i - 1; j++)
 		{
 			temp = *(arr + j);
 			if (*(arr + j) >= *(arr + j + 1))//把大的往后排
@@ -31,7 +34,8 @@ float * CSortArray::bubbleSort(float * arr, int arrLength)
 
 }
 
-/*
+
+/*@Brief: 选择排序--简单选择排序
 原理, 在未排序中的其中找最小的 放置到已排序的最终的最后一个
 */
 float * CSortArray::selectionSort(float * arr, int arrLength)
@@ -66,7 +70,7 @@ float * CSortArray::selectionSort(float * arr, int arrLength)
 	return arr;
 }
 
-/*原理:
+/*原理: 插入排序 --- 简单插入排序
 把无序列表中的元素向有序列表中插; 要理解
 */
 float* CSortArray::insertionSort(float * arr, int arrLength)
@@ -87,4 +91,23 @@ float* CSortArray::insertionSort(float * arr, int arrLength)
 
 	return arr;
 
+}
+
+
+/*@Brief: 插入排序-------希尔shell排序
+ shell sort原理解释: http://bubkoo.com/2014/01/15/sort-algorithm/shell-sort/
+*/
+float* CSortArray::shellSort(float* arr, const int arrLength)
+{
+
+
+	float tempVar;
+	float* subArray = new float[arrLength / 2];
+	for (int gap = arrLength / 2; gap >= 1;gap /= 2)
+	{//ensure subArray by gap, gap means number of sub-arrays
+		
+
+	}
+
+	return arr;
 }

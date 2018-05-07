@@ -1,3 +1,9 @@
-# firstRepository
-first time to test repository
-用来做github的实验
+# 排序算法练习
+
+用来进行练习排序算法. 写成了一个接口类**CSortArray**
+
+目前完成的排序算法有:
+
+1. 交换排序 ---- 冒泡排序
+2. 选择排序 ---- 简单选择排序
+3. 插入排序 ---- 简单插入排序, shell(希尔)排序
